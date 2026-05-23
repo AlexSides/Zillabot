@@ -23,6 +23,18 @@ ZillaBot is an autonomous senior design robot built for sumo-style pushing and t
 | Navigation design | [Navigation subsystem](docs/navigation-subsystem.md) and [state machine snippet](code-snippets/navigation-state-machine.md) |
 | Testing summary | [Testing results](docs/testing-results.md) |
 
+## Testing Evidence
+
+The [testing results](docs/testing-results.md) page summarizes available subsystem, demo, and traction/push-test evidence. The revised tighter and thicker silicone tread improved push-test pass rates across the tested loads, though the new tread results used a smaller sample size and should be read with that limitation in mind.
+
+## Key Engineering Takeaways
+
+- Stronger traction can improve pushing force but also changes navigation behavior.
+- Boundary detection needs to remain the highest-priority safety behavior.
+- Live telemetry made sensor and state debugging easier during integration.
+- Dual-core organization helped separate fast safety/motor behavior from higher-level navigation.
+- Real-world robot testing revealed issues that were not obvious from code alone.
+
 ## Visual Design Progression
 
 | Prototype wiring | Integrated prototype | Final enclosure |
@@ -36,7 +48,7 @@ ZillaBot is an autonomous senior design robot built for sumo-style pushing and t
 - `videos/` contains short demo clips.
 - `hardware/` contains selected CAD, drawing, and PCB fabrication assets.
 - `code-snippets/` contains portfolio-friendly excerpts that explain important logic.
-- Root Python files contain the current working implementation snapshot and may be revised as the full source release is cleaned up.
+- Root Python files contain the public project source snapshot included with this portfolio.
 
 ## Demo Videos
 
@@ -46,7 +58,7 @@ ZillaBot is an autonomous senior design robot built for sumo-style pushing and t
 
 ## Current Status
 
-This repository is a public senior design portfolio for ZillaBot. It includes source files, selected design assets, photos, videos, and documentation pages. Some measured performance values were not formally measured in the available public records, so those areas are described qualitatively instead of being filled with unsupported numbers.
+This repository presents the public ZillaBot senior design portfolio: source snapshot, documentation, build media, testing evidence, demo videos, and selected CAD/PCB assets. Some performance values were not formally measured in the available public records, so those areas are described qualitatively rather than with unsupported numbers.
 
 ## Wi-Fi Secrets
 
