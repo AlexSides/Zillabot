@@ -1,31 +1,52 @@
 # ZillaBot Senior Design Portfolio
 
-ZillaBot is a senior design robotics project focused on autonomous movement, sensing, and competition-oriented behavior. This repository is currently organized as a portfolio-ready project space for documentation, images, testing notes, and selected code examples while the full robot codebase is still being prepared for release.
+ZillaBot is an autonomous senior design robot built for sumo-style pushing and tug-of-war competition. The robot combines a two-wheel rear-drive platform, floor-facing boundary sensors, front-facing time-of-flight sensors, IMU feedback, a custom CAD chassis, and an integrated PCB to support real-time navigation decisions.
 
-## Repository Focus
+![Final ZillaBot build](images/progression/04-final-build.jpg)
 
-- Project overview and subsystem documentation
-- Testing notes and result summaries
-- Reflection and lessons learned
-- Short code snippets that highlight design decisions
-- Images, diagrams, and portfolio assets
+## What This Repository Shows
+
+- Autonomous robot design for sumo and tug-of-war match formats
+- Mechanical progression from breadboard prototype to enclosed 3D-printed robot
+- Sensor-driven navigation using boundary, object-detection, and orientation inputs
+- PCB, CAD, and chassis assets from the senior design build
+- Test evidence, demo videos, and selected code examples
+
+## Project Highlights
+
+| Area | Evidence |
+| --- | --- |
+| Final robot build | [Build progression gallery](docs/media-gallery.md) |
+| Competition and demo footage | [Video evidence](docs/media-gallery.md#demo-and-competition-videos) |
+| Chassis and enclosure design | [Hardware assets](docs/hardware-assets.md) |
+| PCB and wiring architecture | [PCB layout image](images/design/pcb-layout.png) and [Gerber package](hardware/pcb/zillabot-gerber.zip) |
+| Navigation design | [Navigation subsystem](docs/navigation-subsystem.md) and [state machine snippet](code-snippets/navigation-state-machine.md) |
+| Testing summary | [Testing results](docs/testing-results.md) |
+
+## Visual Design Progression
+
+| Prototype wiring | Integrated prototype | Final enclosure |
+| --- | --- | --- |
+| ![Early breadboard prototype](images/progression/01-early-prototype.jpg) | ![Integrated prototype](images/progression/03-integrated-prototype.jpg) | ![Final enclosed ZillaBot](images/progression/04-final-build.jpg) |
 
 ## Repository Structure
 
-- `docs/` contains project writeups and subsystem notes
-- `code-snippets/` contains small, portfolio-friendly examples
-- `images/` is reserved for robot photos, diagrams, screenshots, and figures
+- `docs/` contains the project overview, subsystem writeups, media gallery, hardware asset index, testing notes, and reflection.
+- `images/` contains build photos, CAD renders, PCB imagery, chassis revisions, and testing visuals.
+- `videos/` contains demo and competition clips.
+- `hardware/` contains selected CAD, drawing, and PCB fabrication assets.
+- `code-snippets/` contains portfolio-friendly excerpts that explain important logic.
+- Root Python files contain the current working implementation snapshot and may be revised as the full source release is cleaned up.
 
-## Suggested Next Additions
+## Demo Videos
 
-- Add robot photos to `images/`
-- Add wiring, block, or flow diagrams to `docs/`
-- Replace placeholder tables with measured test data
-- Add presentation slides, poster exports, or report PDFs if needed
+- [April 13 demo run](videos/2026-04-13-demo-run.mp4)
+- [May 10 competition run](videos/2026-05-10-competition-run.mp4)
+- [Short demonstration clip](videos/short-demo-clip.mp4)
 
 ## Current Status
 
-This repository is documentation-first for now. Some implementation files are still in progress and may be revised before a full source release.
+This repository is being shaped as a public engineering portfolio. It includes source files, selected design assets, photos, videos, and documentation pages. Exact measured performance values are still left as placeholders unless they came directly from the project source materials.
 
 ## Wi-Fi Secrets
 

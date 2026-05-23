@@ -2,9 +2,9 @@
 
 ## Testing Overview
 
-This page is intended to summarize how ZillaBot was tested and what evidence supports the final design.
+This page summarizes available testing evidence for ZillaBot. The source material includes a documented test plan, sensor and navigation testing notes, arena photos, and demonstration videos.
 
-Do not leave invented numbers here. Replace the placeholders below with your real measurements, photos, and observations.
+Exact measured values should only be added after they are confirmed from final logs, reports, or recorded trials.
 
 ## Test Categories
 
@@ -14,13 +14,14 @@ Do not leave invented numbers here. Replace the placeholders below with your rea
 - Reliability or repeatability tests
 - Competition-style trials
 
-## Test Log Template
+## Documented Test Areas
 
 | Test ID | Objective | Method | Result | Evidence | Notes |
 | --- | --- | --- | --- | --- | --- |
-| T-01 | `[Add objective]` | `[Add method]` | `[Pass/Fail/TBD]` | `[Photo/video/data link]` | `[Add notes]` |
-| T-02 | `[Add objective]` | `[Add method]` | `[Pass/Fail/TBD]` | `[Photo/video/data link]` | `[Add notes]` |
-| T-03 | `[Add objective]` | `[Add method]` | `[Pass/Fail/TBD]` | `[Photo/video/data link]` | `[Add notes]` |
+| T-01 | Live navigation telemetry stream | Stream and record robot sensor/state data during operation | PASS in source report | `[Add report excerpt or screenshot]` | Source report notes live IR, ToF, IMU, motor, and state data updates |
+| T-02 | Boundary detection validation | Test floor-facing sensors against arena edge conditions | `[Add result]` | [TCRT distance image](../images/testing/tcrt-distance.png) | Add exact measured thresholds and conditions |
+| T-03 | Object detection validation | Test front time-of-flight sensing against targets | `[Add result]` | [ToF reflection note](../images/testing/tof-reflections.jpeg) | Add range, angle, and material notes |
+| T-04 | Competition/demo behavior | Run robot in arena or demonstration setup | `[Add result]` | [Demo videos](media-gallery.md#demo-and-competition-videos) | Add match outcomes and observations |
 
 ## Performance Metrics
 
@@ -35,22 +36,22 @@ Add only measured values here.
 
 ## Test Evidence
 
-Add links or references to supporting material.
+Current visual evidence:
 
-- `[Add photo set]`
-- `[Add short demo clip]`
-- `[Add spreadsheet or chart]`
-- `[Add screenshots of logs or telemetry]`
+- [Arena test setup](../images/testing/build-test-setup.jpg)
+- [April 13 demo run](../videos/2026-04-13-demo-run.mp4)
+- [May 10 competition run](../videos/2026-05-10-competition-run.mp4)
+- [Short demonstration clip](../videos/short-demo-clip.mp4)
 
 ## Observations
 
 Use this section for qualitative findings.
 
-- `[Add what worked well]`
-- `[Add where behavior was inconsistent]`
-- `[Add sensor issues or tuning notes]`
-- `[Add conditions that produced failures]`
+- The project source materials describe telemetry as useful for debugging live sensor and state behavior.
+- Add final notes about what worked well during competition demonstrations.
+- Add final notes about sensor noise, edge cases, or tuning challenges after reviewing logs.
+- Add any conditions that produced failures or inconsistent behavior.
 
 ## Summary
 
-`[Write a short, evidence-based conclusion once your data is finalized]`
+`[Write a short, evidence-based conclusion once final measured results are confirmed]`

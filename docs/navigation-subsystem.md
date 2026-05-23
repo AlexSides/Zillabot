@@ -2,13 +2,7 @@
 
 ## Purpose
 
-The navigation subsystem determines how ZillaBot interprets sensor input and chooses movement actions in real time.
-
-Replace this section with a short explanation of:
-
-- what the robot is trying to detect
-- how it responds to targets, boundaries, or obstacles
-- what "success" looks like for navigation in your project
+The navigation subsystem determines how ZillaBot interprets sensor input and chooses movement actions in real time. Its goal is to keep the robot responsive during sumo and tug-of-war behavior while protecting against arena boundary conditions.
 
 ## Navigation Responsibilities
 
@@ -19,46 +13,42 @@ Replace this section with a short explanation of:
 
 ## Inputs
 
-List the signals that influence navigation.
-
-- `[Add distance sensor inputs]`
-- `[Add line or boundary sensor inputs]`
-- `[Add IMU or heading inputs]`
-- `[Add mode switches or user controls]`
+- front-facing time-of-flight readings for opponent or object detection
+- floor-facing boundary sensor readings for edge detection
+- IMU values for orientation feedback
+- mode selection inputs for switching between program, sumo, and tug behavior
+- start input used before entering active match behavior
 
 ## Outputs
 
-List what the subsystem produces.
-
-- `[Add movement commands]`
-- `[Add state changes]`
-- `[Add telemetry or debug outputs if used]`
+- movement intent sent to the motor control layer
+- navigation state changes such as search, pursue, avoid, or tug behavior
+- telemetry/debug outputs when enabled for testing
 
 ## Navigation Strategy
 
 Document the high-level logic rather than every implementation detail.
 
-- Search behavior: `[Describe how the robot looks for a target or direction]`
-- Pursuit behavior: `[Describe how it reacts when a target is detected]`
-- Avoid or recovery behavior: `[Describe what happens near edges or unsafe conditions]`
-- Mode-specific behavior: `[Describe differences between project modes, if any]`
+- Search behavior: move or turn until the sensor array identifies a meaningful target condition
+- Pursuit behavior: drive toward a detected object or opponent using front sensor readings
+- Avoid or recovery behavior: prioritize edge detection and reverse/turn behavior before continuing
+- Mode-specific behavior: support different competition behavior for sumo and tug-of-war operation
 
 ## State Machine Summary
 
-`[Insert state diagram or transition chart here]`
+The current portfolio snippet describes the state-machine concept here:
 
-Suggested items to include:
+- [Navigation state machine snippet](../code-snippets/navigation-state-machine.md)
 
-- idle
-- search
-- pursue
-- avoid
-- recover
-- mode-specific states
+Suggested final additions:
+
+- state transition diagram
+- exact state names from the final implementation
+- transition conditions from the tested code
 
 ## Sensor Fusion or Priority Rules
 
-`[Explain how conflicting sensor readings are handled]`
+Boundary and safety-related readings should be treated as higher priority than pursuit behavior. This keeps the robot from continuing an aggressive movement when an edge or unsafe condition has been detected.
 
 Helpful prompts:
 
@@ -70,14 +60,14 @@ Helpful prompts:
 
 Use this section to explain what made navigation difficult.
 
-- `[Add inconsistent sensor readings]`
-- `[Add timing or responsiveness issues]`
-- `[Add edge-case behaviors]`
-- `[Add tuning challenges]`
+- sensor readings can vary with surface, distance, and robot angle
+- state transitions need to be fast enough for competition behavior
+- motor response, battery level, and floor traction can change the observed behavior
+- telemetry is helpful for debugging but should not slow down the control loop
 
 ## Future Improvements
 
-- `[Add ideas for better targeting]`
-- `[Add ideas for filtering or smoothing]`
-- `[Add ideas for cleaner state transitions]`
-- `[Add ideas for simulation or replay testing]`
+- add a clean state transition diagram based on the final source
+- include measured response-time data from match testing
+- compare behavior across multiple floor or arena conditions
+- add replay plots from saved telemetry logs if available

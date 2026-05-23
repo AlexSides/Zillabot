@@ -2,14 +2,11 @@
 
 ## Project Summary
 
-ZillaBot is a senior design robotics project built to demonstrate autonomous behavior, sensing, and control in a competitive robot platform.
+ZillaBot is an autonomous robot designed for sumo and tug-of-war style competition. The platform was built to detect arena boundaries, identify nearby objects or opponents, and choose movement responses without direct human control during a match.
 
-Replace this paragraph with:
+The final system combines a two-wheel rear-drive layout, floor-facing boundary detection sensors, front-facing time-of-flight sensors, IMU feedback, motor control hardware, a custom CAD chassis, and an integrated PCB.
 
-- the project goal
-- the competition or use case
-- the main design constraints
-- the high-level outcome you wanted the robot to achieve
+![Final CAD design render](../images/design/final-design-render.png)
 
 ## Core Objectives
 
@@ -20,50 +17,54 @@ Replace this paragraph with:
 
 ## High-Level Architecture
 
-Use this section to describe the robot as a group of connected subsystems.
+ZillaBot can be described as a set of connected subsystems:
 
-- Mechanical subsystem: `[Add chassis, wheels, frame, and drivetrain summary]`
-- Electrical subsystem: `[Add microcontroller, motor driver, power system, sensors]`
-- Software subsystem: `[Add navigation logic, sensor handling, startup flow, telemetry if used]`
+- Mechanical subsystem: 3D-printed chassis, enclosure, wheel components, motor mounts, and front attachment geometry
+- Electrical subsystem: microcontroller, motor driver, buck converter, audio amplifier, gyroscope, boundary sensors, and time-of-flight sensor array
+- Software subsystem: sensor polling, mode selection, navigation state logic, motor command generation, and optional telemetry support
 
 ## System Diagram
 
-`[Insert block diagram or architecture figure here]`
+![PCB and subsystem layout](../images/design/pcb-layout.png)
 
-Suggested assets:
+Additional design source files are available in:
 
-- robot block diagram
-- wiring overview
-- software flow diagram
+- [Hardware assets](hardware-assets.md)
+- [Media gallery](media-gallery.md)
+- [Draw.io diagrams](../diagrams/)
 
 ## Major Subsystems
 
 ### Mobility
 
-`[Describe motors, drivetrain, turning method, and movement goals]`
+The robot uses a two-wheel rear-drive approach. The navigation software commands differential wheel movement to search, turn, pursue, recover, and drive during competition behavior.
 
 ### Sensing
 
-`[Describe line sensors, distance sensors, IMU, or other sensors used]`
+The sensing system combines several inputs:
+
+- floor-facing boundary sensors for arena edge detection
+- front-facing time-of-flight sensors for object and opponent detection
+- IMU feedback for orientation and heading-related behavior
 
 ### Navigation and Decision Logic
 
-`[Describe how the robot chooses actions during operation]`
+The navigation layer uses sensor priority rules and state-based behavior. Boundary and safety conditions take priority, while target detection and pursuit behavior guide the robot during active match modes.
 
 ### User Interface or Match Controls
 
-`[Describe switches, startup behavior, operating modes, or indicators]`
+The implementation includes mode selection and startup handling for match-oriented operation. Exact switch and match-control behavior can be expanded here with final wiring photos or control diagrams.
 
 ## Design Constraints
 
 Document the real-world constraints that shaped the project.
 
-- Size or weight limits: `[Add details]`
-- Time constraints: `[Add details]`
-- Budget constraints: `[Add details]`
-- Reliability requirements: `[Add details]`
-- Competition rules or environment: `[Add details]`
+- Size or weight limits: `[Add exact competition limits]`
+- Time constraints: senior design schedule and demonstration deadlines
+- Budget constraints: `[Add exact budget or parts constraints]`
+- Reliability requirements: repeatable startup, stable movement, and reliable boundary detection
+- Competition rules or environment: sumo arena and tug-of-war match conditions
 
 ## Final Notes
 
-Use this page as the reader's first technical summary before they open the deeper subsystem and testing documents.
+This page is the top-level technical summary. The deeper pages document navigation behavior, testing evidence, hardware assets, and project reflection.
