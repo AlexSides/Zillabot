@@ -17,7 +17,7 @@ ZillaBot is an autonomous senior design robot built for sumo-style pushing and t
 | Area | Evidence |
 | --- | --- |
 | Final robot build | [Build progression gallery](docs/media-gallery.md) |
-| Competition and demo footage | [Video evidence](docs/media-gallery.md#demo-and-competition-videos) |
+| Demo footage | [Video evidence](docs/media-gallery.md#demo-videos) |
 | Chassis and enclosure design | [Hardware assets](docs/hardware-assets.md) |
 | PCB and wiring architecture | [PCB layout image](images/design/pcb-layout.png) and [Gerber package](hardware/pcb/zillabot-gerber.zip) |
 | Navigation design | [Navigation subsystem](docs/navigation-subsystem.md) and [state machine snippet](code-snippets/navigation-state-machine.md) |
@@ -33,15 +33,14 @@ ZillaBot is an autonomous senior design robot built for sumo-style pushing and t
 
 - `docs/` contains the project overview, subsystem writeups, media gallery, hardware asset index, testing notes, and reflection.
 - `images/` contains build photos, CAD renders, PCB imagery, chassis revisions, and testing visuals.
-- `videos/` contains demo and competition clips.
+- `videos/` contains short demo clips.
 - `hardware/` contains selected CAD, drawing, and PCB fabrication assets.
 - `code-snippets/` contains portfolio-friendly excerpts that explain important logic.
 - Root Python files contain the current working implementation snapshot and may be revised as the full source release is cleaned up.
 
 ## Demo Videos
 
-- [April 13 demo run](videos/2026-04-13-demo-run.mp4)
-- [May 10 competition run](videos/2026-05-10-competition-run.mp4)
+- [April 13 final 5-second demo highlight](videos/2026-04-13-demo-run.mp4)
 - [Short demonstration clip](videos/short-demo-clip.mp4)
 
 ## Current Status
