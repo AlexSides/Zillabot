@@ -40,7 +40,7 @@ ZillaBot is an autonomous senior design robot built for sumo-style pushing and t
 
 ## Demo Videos
 
-- [April 13 final 5-second demo highlight](videos/2026-04-13-demo-run.mp4)
+- [April 13 demo run](videos/2026-04-13-demo-run.mp4)
 - [May 10 competition run](videos/2026-05-10-competition-run.mp4)
 - [Short demonstration clip](videos/short-demo-clip.mp4)
 
