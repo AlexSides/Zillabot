@@ -1,6 +1,6 @@
 # Architecture Diagrams
 
-This page provides GitHub-viewable PNG versions of the system and navigation diagrams. The PNGs are portfolio summaries derived from the D2 design-review Draw.io sources.
+This page provides GitHub-viewable PNG versions of the system and navigation diagrams. The PNGs are exported from the D2 project-management and design-review materials.
 
 The original editable sources remain available here:
 
@@ -11,18 +11,34 @@ The original editable sources remain available here:
 
 ![Top-level ZillaBot system diagram](../images/diagrams/top-level-system.png)
 
+## Power Block Diagram
+
+![ZillaBot power block diagram](../images/diagrams/power-block-diagram.png)
+
+## Motor Control Diagram
+
+![ZillaBot motor control diagram](../images/diagrams/motor-control-diagram.png)
+
+## Sensor Subsystem Diagrams
+
+| Boundary Detection | Object Detection |
+| --- | --- |
+| ![Boundary detection diagram](../images/diagrams/boundary-detection-diagram.png) | ![Object detection diagram](../images/diagrams/object-detection-diagram.png) |
+
 ## Navigation Block Diagram
 
 ![ZillaBot navigation block diagram](../images/diagrams/navigation-block-diagram.png)
 
 ## Navigation State Diagrams
 
-| Sumo Mode | Tug-of-War Mode |
-| --- | --- |
-| ![Sumo navigation state diagram](../images/diagrams/sumo-navigation-state-diagram.png) | ![Tug navigation state diagram](../images/diagrams/tug-navigation-state-diagram.png) |
+![ZillaBot navigation state diagrams](../images/diagrams/navigation-state-diagrams.png)
+
+## Telemetry Wireframe
+
+![ZillaBot telemetry UI wireframe](../images/diagrams/telemetry-ui-wireframe.png)
 
 ## Notes
 
-- These images are intended for quick public viewing on GitHub.
+- These images are intended for quick public viewing on GitHub and preserve the original design-review visual style.
 - The Draw.io files are kept as the editable design-review sources.
 - The diagrams are documentation artifacts and should be read alongside the source-code walkthrough and testing results.

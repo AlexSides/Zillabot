@@ -58,9 +58,7 @@ The current portfolio snippet describes the state-machine concept here:
 
 The design-review Draw.io source includes navigation block and state diagrams for the portfolio record. The linked snippet provides a readable summary of the same design approach: read sensors, prioritize safety conditions, choose a navigation state, and send movement commands.
 
-| Sumo state diagram | Tug-of-war state diagram |
-| --- | --- |
-| ![Sumo navigation state diagram](../images/diagrams/sumo-navigation-state-diagram.png) | ![Tug navigation state diagram](../images/diagrams/tug-navigation-state-diagram.png) |
+![Sumo and tug navigation state diagrams](../images/diagrams/navigation-state-diagrams.png)
 
 ## Sensor Fusion and Priority Rules
 
