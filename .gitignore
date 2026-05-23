@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+wifi_secrets.py
+sensor_log.csv
