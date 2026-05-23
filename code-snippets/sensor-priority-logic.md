@@ -21,10 +21,6 @@ else:
 - Priority rules make robot behavior easier to explain and debug
 - This logic shows how the robot avoids reacting to every sensor equally
 
-## Replace With Final Version
+## Notes
 
-When ready, replace this pseudocode with:
-
-- a short real code excerpt
-- a note about the sensors involved
-- a short explanation of why this priority order was chosen
+This pseudocode is a public-facing explanation of the priority concept. The available public records do not include a complete formal sensor-priority table.

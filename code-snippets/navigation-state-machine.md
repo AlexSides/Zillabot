@@ -1,8 +1,6 @@
 # Navigation State Machine Snippet
 
-This page is meant for a portfolio-friendly excerpt, not the full production implementation.
-
-Replace the example below with a real snippet from your project when you are ready.
+This page uses representative pseudocode to explain the navigation approach without publishing every implementation detail. It is intended to show the design pattern behind ZillaBot's state-based behavior.
 
 ## Representative Pseudocode
 
@@ -33,10 +31,6 @@ loop:
 - priority of safety conditions
 - separation between sensing and action selection
 
-## Replace With Final Version
+## Notes
 
-When your full code is ready, paste a short excerpt here and add:
-
-- where it lives in the project
-- what the snippet is responsible for
-- why this design choice mattered
+The exact production state transitions are not fully documented in the public records. This simplified version is included to make the navigation concept readable for reviewers.

@@ -4,7 +4,7 @@
 
 This page summarizes available testing evidence for ZillaBot. The source material includes a documented test plan, sensor and navigation testing notes, arena photos, and demonstration videos.
 
-Exact measured values should only be added after they are confirmed from final logs, reports, or recorded trials.
+Exact measured values are only included when they are present in the available public records. Several performance values were not formally measured in the public materials, so they are documented as qualitative observations.
 
 ## Test Categories
 
@@ -18,21 +18,19 @@ Exact measured values should only be added after they are confirmed from final l
 
 | Test ID | Objective | Method | Result | Evidence | Notes |
 | --- | --- | --- | --- | --- | --- |
-| T-01 | Live navigation telemetry stream | Stream and record robot sensor/state data during operation | PASS in source report | `[Add report excerpt or screenshot]` | Source report notes live IR, ToF, IMU, motor, and state data updates |
-| T-02 | Boundary detection validation | Test floor-facing sensors against arena edge conditions | `[Add result]` | [TCRT distance image](../images/testing/tcrt-distance.png) | Add exact measured thresholds and conditions |
-| T-03 | Object detection validation | Test front time-of-flight sensing against targets | `[Add result]` | [ToF reflection note](../images/testing/tof-reflections.jpeg) | Add range, angle, and material notes |
-| T-04 | Competition/demo behavior | Run robot in arena or demonstration setup | `[Add result]` | [Demo videos](media-gallery.md#demo-and-competition-videos) | Add match outcomes and observations |
+| T-01 | Live navigation telemetry stream | Stream and record robot sensor/state data during operation | PASS in source report | Source test report | Source report notes live IR, ToF, IMU, motor, and state data updates |
+| T-02 | Boundary detection validation | Test floor-facing sensors against arena edge conditions | Not formally measured in the available public records | [TCRT distance image](../images/testing/tcrt-distance.png) | Public materials show design/testing context, but final thresholds are not published here |
+| T-03 | Object detection validation | Test front time-of-flight sensing against targets | Not formally measured in the available public records | [ToF reflection note](../images/testing/tof-reflections.jpeg) | Public materials show sensor considerations, but final range data is not published here |
+| T-04 | Competition/demo behavior | Run robot in arena or demonstration setup | Demonstrated in available video evidence | [Demo videos](media-gallery.md#demo-videos) | Public videos show demonstration activity; formal match outcomes are not documented here |
 
 ## Performance Metrics
 
-Add only measured values here.
-
 | Metric | Measured Value | Test Condition | Notes |
 | --- | --- | --- | --- |
-| Startup time | `[Add data]` | `[Add condition]` | `[Add notes]` |
-| Detection range | `[Add data]` | `[Add condition]` | `[Add notes]` |
-| Response time | `[Add data]` | `[Add condition]` | `[Add notes]` |
-| Run consistency | `[Add data]` | `[Add condition]` | `[Add notes]` |
+| Startup time | Not formally measured in the available public records | Robot startup and match preparation | Keep as qualitative unless final timed data is recovered |
+| Detection range | Not formally measured in the available public records | Boundary and object detection testing | Source materials discuss sensor validation but do not publish final range values here |
+| Response time | Not formally measured in the available public records | Navigation state response | Telemetry was used during development, but final timing numbers are not published here |
+| Run consistency | Not formally measured in the available public records | Demo and competition-style runs | Available evidence is video-based rather than a formal trial table |
 
 ## Test Evidence
 
@@ -45,13 +43,11 @@ Current visual evidence:
 
 ## Observations
 
-Use this section for qualitative findings.
-
 - The project source materials describe telemetry as useful for debugging live sensor and state behavior.
-- Add final notes about what worked well during competition demonstrations.
-- Add final notes about sensor noise, edge cases, or tuning challenges after reviewing logs.
-- Add any conditions that produced failures or inconsistent behavior.
+- Boundary detection and object detection were treated as separate validation areas during the test planning process.
+- Demonstration videos provide public evidence of the robot operating, but they do not replace a controlled test table with repeated trials.
+- Final quantitative thresholds, timing data, and repeatability statistics are not published in this repository.
 
 ## Summary
 
-`[Write a short, evidence-based conclusion once final measured results are confirmed]`
+The available public records support that ZillaBot was tested through subsystem checks, telemetry-assisted debugging, and demonstration runs. This page intentionally avoids unsupported performance claims where final measured values are not available.

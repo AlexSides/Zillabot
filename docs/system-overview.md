@@ -53,15 +53,15 @@ The navigation layer uses sensor priority rules and state-based behavior. Bounda
 
 ### User Interface or Match Controls
 
-The implementation includes mode selection and startup handling for match-oriented operation. Exact switch and match-control behavior can be expanded here with final wiring photos or control diagrams.
+The implementation includes mode selection and startup handling for match-oriented operation. The available public records do not include a finished control-panel diagram, so this section stays at the system-behavior level.
 
 ## Design Constraints
 
-Document the real-world constraints that shaped the project.
+The project was shaped by senior design deadlines, competition-style operation, hardware integration limits, and the need for repeatable demonstrations.
 
-- Size or weight limits: `[Add exact competition limits]`
+- Size or weight limits: not formally documented in the available public records
 - Time constraints: senior design schedule and demonstration deadlines
-- Budget constraints: `[Add exact budget or parts constraints]`
+- Budget constraints: not formally documented in the available public records
 - Reliability requirements: repeatable startup, stable movement, and reliable boundary detection
 - Competition rules or environment: sumo arena and tug-of-war match conditions
 

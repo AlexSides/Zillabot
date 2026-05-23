@@ -46,7 +46,7 @@ ZillaBot is an autonomous senior design robot built for sumo-style pushing and t
 
 ## Current Status
 
-This repository is being shaped as a public engineering portfolio. It includes source files, selected design assets, photos, videos, and documentation pages. Exact measured performance values are still left as placeholders unless they came directly from the project source materials.
+This repository is a public senior design portfolio for ZillaBot. It includes source files, selected design assets, photos, videos, and documentation pages. Some measured performance values were not formally measured in the available public records, so those areas are described qualitatively instead of being filled with unsupported numbers.
 
 ## Wi-Fi Secrets
 

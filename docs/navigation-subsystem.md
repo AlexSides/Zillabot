@@ -27,7 +27,7 @@ The navigation subsystem determines how ZillaBot interprets sensor input and cho
 
 ## Navigation Strategy
 
-Document the high-level logic rather than every implementation detail.
+The public documentation focuses on the high-level behavior rather than every implementation detail.
 
 - Search behavior: move or turn until the sensor array identifies a meaningful target condition
 - Pursuit behavior: drive toward a detected object or opponent using front sensor readings
@@ -40,25 +40,14 @@ The current portfolio snippet describes the state-machine concept here:
 
 - [Navigation state machine snippet](../code-snippets/navigation-state-machine.md)
 
-Suggested final additions:
-
-- state transition diagram
-- exact state names from the final implementation
-- transition conditions from the tested code
+The full transition diagram is not included in the available public records. The linked snippet provides a simplified view of the design approach: read sensors, prioritize safety conditions, choose a navigation state, and send movement commands.
 
 ## Sensor Fusion or Priority Rules
 
 Boundary and safety-related readings should be treated as higher priority than pursuit behavior. This keeps the robot from continuing an aggressive movement when an edge or unsafe condition has been detected.
-
-Helpful prompts:
-
-- Which sensors have highest priority?
-- What safety conditions override attack or pursuit behavior?
-- How do you handle uncertain or noisy readings?
+The public materials do not include a complete formal priority table, but the intended design is clear: boundary detection and recovery behavior should override target pursuit.
 
 ## Known Challenges
-
-Use this section to explain what made navigation difficult.
 
 - sensor readings can vary with surface, distance, and robot angle
 - state transitions need to be fast enough for competition behavior

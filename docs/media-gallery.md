@@ -33,9 +33,6 @@ The full CAD and PCB file index is in [Hardware Assets](hardware-assets.md).
 - [TCRT distance reference](../images/testing/tcrt-distance.png)
 - [ToF reflection reference](../images/testing/tof-reflections.jpeg)
 
-## Photos Still Needed
+## Notes
 
-- `[Add best final hero photo if you want a cleaner README banner]`
-- `[Add labeled wiring close-up]`
-- `[Add competition-day photo with the full arena]`
-- `[Add team photo if appropriate for the public repo]`
+The gallery uses the strongest public visuals currently available in this repository. Additional labeled wiring photos, team photos, or competition-day images can be added later if they are approved for public sharing.

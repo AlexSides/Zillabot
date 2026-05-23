@@ -43,9 +43,6 @@ This page indexes the selected CAD, PCB, drawing, and diagram assets included in
 | V6 | ![Chassis V6](../images/design/chassis-v6.png) |
 | V7 | ![Chassis V7](../images/design/chassis-v7.png) |
 
-## Notes to Add Later
+## Notes
 
-- `[Add CAD software used]`
-- `[Add 3D printer/material settings if relevant]`
-- `[Add PCB toolchain and board revision notes]`
-- `[Add what changed between chassis revisions]`
+The selected hardware files show the public CAD, drawing, diagram, and PCB artifacts available for the portfolio. Specific CAD software versions, printer settings, PCB toolchain details, and revision-by-revision design notes are not formally documented in the available public records.
