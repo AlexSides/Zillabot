@@ -20,7 +20,9 @@ ZillaBot is an autonomous senior design robot built for sumo-style pushing and t
 | Demo footage | [Video evidence](docs/media-gallery.md#demo-videos) |
 | Chassis and enclosure design | [Hardware assets](docs/hardware-assets.md) |
 | PCB and wiring architecture | [PCB layout image](images/design/pcb-layout.png) and [Gerber package](hardware/pcb/zillabot-gerber.zip) |
-| Navigation design | [Navigation subsystem](docs/navigation-subsystem.md) and [state machine snippet](code-snippets/navigation-state-machine.md) |
+| Architecture diagrams | [Rendered system and state diagrams](docs/architecture-diagrams.md) |
+| Bill of materials | [BOM and cost summary](docs/bill-of-materials.md) |
+| Navigation design | [Navigation subsystem](docs/navigation-subsystem.md), [state machine snippet](code-snippets/navigation-state-machine.md), and [source walkthrough](docs/source-code-walkthrough.md) |
 | Testing summary | [Testing results](docs/testing-results.md) |
 
 ## Testing Evidence
@@ -44,7 +46,7 @@ The [testing results](docs/testing-results.md) page summarizes available subsyst
 ## Repository Structure
 
 - `docs/` contains the project overview, subsystem writeups, media gallery, hardware asset index, testing notes, and reflection.
-- `images/` contains build photos, CAD renders, PCB imagery, chassis revisions, and testing visuals.
+- `images/` contains build photos, CAD renders, PCB imagery, chassis revisions, architecture diagrams, and testing visuals.
 - `videos/` contains short demo clips.
 - `hardware/` contains selected CAD, drawing, and PCB fabrication assets.
 - `code-snippets/` contains portfolio-friendly excerpts that explain important logic.

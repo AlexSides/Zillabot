@@ -20,6 +20,7 @@ This page indexes the selected CAD, PCB, drawing, and diagram assets included in
 | --- | --- |
 | [zillabot-gerber.zip](../hardware/pcb/zillabot-gerber.zip) | PCB fabrication Gerber package |
 | [pcb-layout.png](../images/design/pcb-layout.png) | PCB and subsystem layout image |
+| [bill-of-materials.md](bill-of-materials.md) | D2 final design review BOM and unit-cost summary |
 
 ![PCB layout](../images/design/pcb-layout.png)
 
@@ -30,6 +31,7 @@ This page indexes the selected CAD, PCB, drawing, and diagram assets included in
 | [chassis-v5-drawing.svg](../hardware/drawings/chassis-v5-drawing.svg) | Chassis engineering drawing |
 | [idr-presentation.drawio](../diagrams/idr-presentation.drawio) | Design-review diagram source |
 | [poster.drawio](../diagrams/poster.drawio) | Poster diagram source |
+| [architecture-diagrams.md](architecture-diagrams.md) | Rendered PNG versions of system and navigation diagrams |
 
 ## Chassis Revision Images
 

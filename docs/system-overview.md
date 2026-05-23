@@ -23,12 +23,33 @@ ZillaBot can be described as a set of connected subsystems:
 - Electrical subsystem: microcontroller, motor driver, buck converter, audio amplifier, gyroscope, boundary sensors, and time-of-flight sensor array
 - Software subsystem: sensor polling, mode selection, navigation state logic, motor command generation, and optional telemetry support
 
+The D2 design-review materials describe the final robot as a set of sensing, decision, motor, power, PCB, and chassis subsystems working together around the Raspberry Pi Pico controller.
+
+```mermaid
+flowchart LR
+    start["Start button and mode selector"] --> pico["Raspberry Pi Pico"]
+    ir["2x TCRT5000 boundary sensors"] --> pico
+    tof["5x VL53L0X ToF sensors"] --> pico
+    imu["LSM6DS3 IMU"] --> pico
+    pico --> nav["Navigation state logic"]
+    nav --> motor["TB6612FNG motor driver"]
+    motor --> wheels["2x 25GA370 drive motors"]
+    battery["3x 18650 battery pack"] --> buck["LM2596 buck converter"]
+    battery --> motor
+    buck --> pico
+    buck --> ir
+    buck --> tof
+```
+
 ## System Diagram
+
+![Top-level system diagram](../images/diagrams/top-level-system.png)
 
 ![PCB and subsystem layout](../images/design/pcb-layout.png)
 
 Additional design source files are available in:
 
+- [Architecture diagrams](architecture-diagrams.md)
 - [Hardware assets](hardware-assets.md)
 - [Media gallery](media-gallery.md)
 - [Draw.io diagrams](../diagrams/)
@@ -59,9 +80,9 @@ The implementation includes mode selection and startup handling for match-orient
 
 The project was shaped by senior design deadlines, competition-style operation, hardware integration limits, and the need for repeatable demonstrations.
 
-- Size or weight limits: not formally documented in the available public records
+- Size limit: 13 cm by 13 cm footprint, with unrestricted height in the competition requirements documented in the D2 materials
 - Time constraints: senior design schedule and demonstration deadlines
-- Budget constraints: not formally documented in the available public records
+- Budget constraint: $75 original unit-cost requirement; the final design-review BOM listed a $74.93 unit cost
 - Reliability requirements: repeatable startup, stable movement, and reliable boundary detection
 - Competition rules or environment: sumo arena and tug-of-war match conditions
 
