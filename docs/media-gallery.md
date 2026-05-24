@@ -31,7 +31,9 @@ The full CAD and PCB file index is in [Hardware Assets](hardware-assets.md).
 
 - [Arena setup photo](../images/testing/build-test-setup.jpg)
 - [TCRT distance reference](../images/testing/tcrt-distance.png)
-- [ToF reflection reference](../images/testing/tof-reflections.jpeg)
+- [FDR IR reflectivity graph](../images/testing/fdr-ir-reflectivity-full-trial.png)
+- [FDR ToF distance graph](../images/testing/fdr-tof-center-distance.png)
+- [FDR live telemetry screenshot](../images/testing/fdr-live-telemetry-feed.png)
 
 ## Notes
 

@@ -19,8 +19,8 @@ Exact measured values are only included when they are present in the available p
 | Test ID | Objective | Method | Result | Evidence | Notes |
 | --- | --- | --- | --- | --- | --- |
 | T-01 | Live navigation telemetry stream | Stream and record robot sensor/state data during operation | PASS in source report | Source test report | Source report notes live IR, ToF, IMU, motor, and state data updates |
-| T-02 | Boundary detection validation | Test floor-facing sensors against white, black, and brown surfaces | PASS in D2 final design review | [TCRT distance image](../images/testing/tcrt-distance.png) | IR averages and stability values are listed below |
-| T-03 | Object detection validation | Test front time-of-flight sensing against targets and out-of-range conditions | Mixed: out-of-range PASS, within-10-mm accuracy FAIL | [ToF reflection note](../images/testing/tof-reflections.jpeg) | ToF response-time sampling passed; one accuracy requirement did not |
+| T-02 | Boundary detection validation | Test floor-facing sensors against white, black, and brown surfaces | PASS in D2 final design review | [IR reflectivity graphs](../images/testing/fdr-ir-reflectivity-full-trial.png) | IR averages and stability values are listed below |
+| T-03 | Object detection validation | Test front time-of-flight sensing against targets and out-of-range conditions | Mixed: out-of-range PASS, within-10-mm accuracy FAIL | [ToF distance graph](../images/testing/fdr-tof-center-distance.png) | ToF response-time sampling passed; one accuracy requirement did not |
 | T-04 | Competition/demo behavior | Run robot in arena or demonstration setup | Demonstrated in available video evidence | [Demo videos](media-gallery.md#demo-videos) | Public videos show demonstration activity; formal match outcomes are not documented here |
 
 ## Performance Metrics
@@ -46,6 +46,12 @@ The D2 final design review reported the following boundary-sensor analog test av
 
 The same review reported a 47.6 Hz IR sampling rate. Stability was reported as 1.6% on white for both sensors, 0.55% on black for the left sensor, and 0.66% on black for the right sensor.
 
+FDR slide images:
+
+| Black-surface reflectivity | White-surface reflectivity | Full-trial reflectivity |
+| --- | --- | --- |
+| ![Black-surface reflectivity graph](../images/testing/fdr-ir-reflectivity-black.png) | ![White-surface reflectivity graph](../images/testing/fdr-ir-reflectivity-white.png) | ![Full-trial reflectivity graph](../images/testing/fdr-ir-reflectivity-full-trial.png) |
+
 ### Object Detection
 
 The D2 final design review reported that the VL53L0X ToF sensors returned out-of-range values near 8190: 8190, 8191, 8189, 8190, and 8190. That requirement passed.
@@ -53,6 +59,16 @@ The D2 final design review reported that the VL53L0X ToF sensors returned out-of
 The ToF accuracy requirement of reading within 10 mm at each distance did not fully pass. The reported maximum deviations were 40 mm, 12 mm, 12 mm, 17 mm, and 18 mm across the sensor positions. The source notes that testing was performed from 20 cm to 4 cm and that all sensors met the 10 mm target except the right 45-degree sensor.
 
 The ToF response-time test passed. The final design review reported a maximum loop-time difference of 3 ms, maximum consecutive sampling-frequency deviation of 4 Hz, and slowest sampling frequency of 33.22 Hz.
+
+FDR slide images:
+
+| Center | Left 90-degree | Left 45-degree |
+| --- | --- | --- |
+| ![Center ToF distance graph](../images/testing/fdr-tof-center-distance.png) | ![Left 90-degree ToF distance graph](../images/testing/fdr-tof-left-90-distance.png) | ![Left 45-degree ToF distance graph](../images/testing/fdr-tof-left-45-distance.png) |
+
+| Right 45-degree | Right 90-degree |
+| --- | --- |
+| ![Right 45-degree ToF distance graph](../images/testing/fdr-tof-right-45-distance.png) | ![Right 90-degree ToF distance graph](../images/testing/fdr-tof-right-90-distance.png) |
 
 ### Navigation Configuration
 
@@ -66,6 +82,12 @@ The ToF response-time test passed. The final design review reported a maximum lo
 | IMU turning | Filter: 0.10, Turn speed: 0.8 | PASS |
 
 The source review notes that the configuration values were tuned through repeated live robot trials and selected based on ring stability, pursuit behavior, and avoid-state performance. It also notes that higher speeds improved response time but increased self-ring-out risk.
+
+FDR slide images:
+
+| Boundary configuration testing | Weight configuration testing | Live telemetry feed |
+| --- | --- | --- |
+| ![Boundary configuration testing plot](../images/testing/fdr-boundary-config-testing.png) | ![Weight configuration testing plot](../images/testing/fdr-weight-config-testing.png) | ![Live telemetry feed screenshot](../images/testing/fdr-live-telemetry-feed.png) |
 
 ### Runtime Estimates
 
@@ -107,6 +129,7 @@ The wheel traction test compared the original wheel setup against a revised sili
 Current visual evidence:
 
 - [Arena test setup](../images/testing/build-test-setup.jpg)
+- [FDR arena test photo](../images/testing/fdr-arena-test-photo.png)
 - [April 13 demo run](../videos/2026-04-13-demo-run.mp4)
 - [May 10 competition run](../videos/2026-05-10-competition-run.mp4)
 - [Short demonstration clip](../videos/short-demo-clip.mp4)
