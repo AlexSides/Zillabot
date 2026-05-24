@@ -60,7 +60,7 @@ The [testing results](docs/testing-results.md) page summarizes available subsyst
 
 ## Current Status
 
-This repository presents the public ZillaBot senior design portfolio: source snapshot, documentation, build media, testing evidence, demo videos, and selected CAD/PCB assets. Some performance values were not formally measured in the available public records, so those areas are described qualitatively rather than with unsupported numbers.
+This repository contains the public project source snapshot, selected hardware assets, photos, demo videos, and documentation from the ZillaBot senior design build. Some performance areas were documented qualitatively when formal measured data was not available.
 
 ## Wi-Fi Secrets
 
